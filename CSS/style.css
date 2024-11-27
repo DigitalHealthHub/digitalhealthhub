@@ -1,0 +1,713 @@
+* {
+    margin: 1px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    /* Background color */
+    z-index: 9999;
+}
+
+.video-overlay video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-content {
+    display: none;
+}
+
+.headerdiv {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+    background-color: #CBD6E8;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.headernav img {
+    width: 10%;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+#logoimg img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.headernav {
+    display: flex;
+    align-items: center;
+
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        display: flex;
+        list-style: none;
+        gap: 10px;
+
+        li {
+            margin: 5px;
+            margin-right: 40px;
+            list-style: none;
+            padding: 4px;
+
+            a {
+                /* margin-right: 10px; */
+                text-decoration: none;
+                font-size: 20px;
+                padding: 8px;
+                color: rgb(0, 0, 0);
+                border-radius: 10px;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.navbar ul li a:hover {
+    color: #1F89E5;
+}
+
+#loginbtn {
+    background-color: #1F89E5;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+
+#registerbtn {
+    background-color: #1F89E5;
+    color: #fff;
+
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+#loginbtn:hover {
+    background-color: rgb(10, 150, 4);
+}
+
+#registerbtn:hover {
+    background-color: #8a2be2;
+}
+
+.mainbody {
+
+    min-height: 60vh;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid blue; */
+
+
+    h2 {
+        text-align: center;
+        font-size: 38px;
+        color: rgb(12, 190, 5);
+        margin: 15px 0 20px 0;
+    }
+
+
+    .maincontent {
+        display: flex;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+
+
+    .maincontentleft {
+        width: 35%;
+        text-align: center;
+        border-radius: 20px;
+        padding: 20px;
+        position: relative;
+        left: 20px;
+
+        #mainimg img {
+            height: 180px;
+            width: 180px;
+            border-radius: 100%;
+            box-shadow: 5px 5px 8px black;
+        }
+    }
+
+    .maintextinfo {
+        h2 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+        }
+    }
+}
+
+.maincontent {
+    width: 100%;
+}
+
+.maincontentright {
+    width: 45%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(10px 5px 10px #000000);
+    }
+}
+
+
+.mainbody {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.maincontentleft {
+    width: 45%;
+    text-align: left;
+    padding: 20px;
+}
+
+.maincontentleft h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.maincontentleft p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.maincontentright {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.maincontentright img {
+    width: 100%;
+    max-width: 1000px;
+    object-fit: contain;
+    margin-left: -20px;
+}
+
+.mainbodybtn button {
+    padding: 10px 20px;
+    margin: 4% 5%;
+    font-weight: bolder;
+    background-color: #1F89E5;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.mainbody button:hover {
+    background-color: #000;
+}
+
+
+
+.diseasecontainer {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    min-height: 180px;
+    background-color: #CBD6E8;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.diseasecontainer h2 {
+    margin: 20px 0px 50px 0;
+}
+
+.diseaseinfobox {
+    width: 80%;
+    padding: 0px 10px 0px 0px;
+    margin: auto;
+}
+
+.diseaseinfobox img {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    border-right: 3px solid black;
+}
+
+.diseaseinfo {
+    border: 2px solid black;
+    display: flex;
+    text-align: left;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.diseasetext {
+    padding: 10px;
+}
+
+.diseasetext2 img {
+    position: relative;
+    right: 1px;
+    left: 1px
+}
+
+/* .diseasebox ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between; Spread content evenly
+
+}
+.diseasebox ul li{
+    margin: auto;
+}
+
+.diseasebox ul li a{
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding:10px 20px;
+    background-color: #1F89E5;
+    border-radius: 30px;
+    color: #fff;
+} */
+
+.diseasecontainer {
+    max-width: 80%x;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: #333;
+}
+
+/* Disease Card Layout */
+.disease-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+}
+
+/* Images */
+.disease-image {
+    width: 150px;
+    margin: 10px;
+    height: auto;
+    object-fit: cover;
+
+}
+
+/* Disease Info */
+.disease-info {
+    text-align: left;
+    width: calc(100% - 150px);
+    /* Adjusted for image size */
+    padding: 0 15px;
+}
+
+.disease-info h3 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.disease-info p {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #555;
+    text-align: justify;
+}
+
+.bloodcontainer {
+    width: 90%;
+    background-color: #CBD6E8;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    /* Added padding for spacing around the content */
+}
+
+.bloodtypelist {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.bloodtypelist ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bloodtypelist li {
+    text-align: center;
+}
+
+.bloodtypelist ul li a {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #1F89E5;
+    border-radius: 20px;
+}
+
+.bloodtypelist ul li a:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.csection {
+    display: flex;
+    margin: 20px auto;
+    max-height: 600px;
+    background-color: #CBD6E8;
+    width: 90%;
+    border-radius: 20px;
+
+}
+
+.csection img {
+    width: 38%;
+    margin: auto;
+    height: 500px;
+    filter: drop-shadow(10px 0PX 15px #1F89E5);
+}
+
+.contactform {
+    border: 2px solid black;
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* box-sizing: border-box; */
+}
+
+.contactform h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #000000;
+    margin: 10px;
+}
+
+.line1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.line1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.line1 div input,
+.line3 textarea {
+    width: 100%;
+    /* Increased width of input fields */
+    padding: 15px;
+    /* Added more padding for larger input fields */
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 18px;
+    /* Increased font size for better readability */
+    box-sizing: border-box;
+}
+
+.line3 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.line3 textarea {
+    height: 120px;
+    /* Increased height of textarea */
+    resize: none;
+    width: 100%;
+}
+
+.contactform label {
+    font-weight: bold;
+}
+
+.submitbtn {
+    text-align: center;
+}
+
+.contactform button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1F89E5;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+.contactform button:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
+.footercontent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.footercontent li {
+    list-style: none;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.footertext h5 {
+    text-align: left;
+}
+
+.footertext h4 {
+    color: #1F89E5;
+}
+
+.footercontent li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footertext {
+    width: 20%;
+    border: 0.1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.footertext h4 {
+    font-size: 20px;
+
+}
+
+.footer1 li {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.EcNumbers {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.socialicon {
+    color: #fff;
+}
+
+.socialicon a {
+    color: #ffffff;
+    height: 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialicon a i {
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1F89E5;
+}
+
+.socialicon a i:hover {
+    background-color: #ffffff;
+    color: #1F89E5;
+}
+
+.afterfooter {
+    text-align: center;
+    margin-top: 10px;
+    color: #1F89E5;
+}
+
+.afterfooter pre:hover {
+    color: white;
+}
+
+/* Chatbot and Back-to-Top Button Styling */
+.chatbot-btn,
+.back-to-top-btn {
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* z-index: 1000; */
+}
+
+.chatbot-btn {
+    bottom: 20px;
+    right: 20px;
+}
+
+.chatbot-btn:hover {
+    background-color: #0056b3;
+}
+
+.back-to-top-btn {
+    bottom: 100px;
+    right: 20px;
+    display: none;
+    /* Initially hidden */
+}
+
+.back-to-top-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Digital Health Hub</title>
+    <link rel="stylesheet" href="C:\Users\dell\OneDrive\Desktop\BE\Anveshana\Client\Client\CSS\AboutUs.css">
+</head>
+<body>
+    <div class="about-us-container">
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('C:/Users/dell/OneDrive/Desktop/BE/Anveshana/assets/Healthcare.jpg');"></div>
+            <div class="slide" style="background-image: url('C:/Users/dell/OneDrive/Desktop/BE/Anveshana/assets/Pathology.jpg');"></div>
+            <div class="slide" style="background-image: url('C:/Users/dell/OneDrive/Desktop/BE/Anveshana/assets/Pharmacy..jpg');"></div>
+        </div>
+        <div class="about-content">
+            <div class="header-container">
+                <h1>About Us</h1>
+                <img src="C:/Users/dell/OneDrive/Desktop/BE/Anveshana/assets/Logo.jpg" alt="Logo" class="header-logo">
+            </div>
+            <p>
+                Welcome to <strong>Digital Health Hub</strong>, where innovation meets compassion to create a seamless, accessible, and transformative healthcare experience. We are committed to reshaping the way healthcare is accessed, delivered, and experienced—ensuring that quality care transcends boundaries and reaches every individual in need.
+            </p>
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Effortless Appointment Scheduling:</strong> Say goodbye to long waits and complex booking systems. With just a few clicks, connect with trusted doctors, schedule consultations, and receive timely reminders.</li>
+                <li><strong>Reliable Online Pharmacy:</strong> Access genuine medications and healthcare products delivered securely to your doorstep.</li>
+                <li><strong>Advanced Blood Bank System:</strong> Bridging the gap between donors and recipients for life-saving connections.</li>
+                <li><strong>Swift Ambulance Services:</strong> Immediate response and timely transport during emergencies.</li>
+                <li><strong>Comprehensive Pathology Services:</strong> Reliable diagnostics for routine and specialized tests.</li>
+                <li><strong>Smart Health Assistance:</strong> Personalized health management and real-time monitoring with cutting-edge technology.</li>
+            </ul>
+            <h2>Our Vision</h2>
+            <p>
+                At Digital Health Hub, we envision a world where healthcare is inclusive, affordable, innovative, and empowering. Our mission is to make healthcare accessible for everyone, leveraging technology to build a user-friendly healthcare ecosystem.
+            </p>
+            <h2>Why Choose Us?</h2>
+            <p>
+                We redefine healthcare with advanced technology, trusted expertise, and compassionate care. Join us in transforming healthcare into an experience that nurtures and inspires.
+            </p>
+            <h2>Join Us</h2>
+            <p>
+                Together, let's build a healthier tomorrow—one step, one solution, and one life at a time.
+            </p>
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+        }
+
+        function startSlideshow() {
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }, 3000);
+        }
+
+        startSlideshow();
+    </script>
+</body>
+</html>
